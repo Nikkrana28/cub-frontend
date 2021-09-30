@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+
+.home {
+    background-color: rgb(236, 245, 236);
+}
+.grid-container-1 {
+    background-color: transparent;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    padding: 100px;
+    
+  }
+  .grid-item-1 {
+    background-color: transparent;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    color:rgb(28, 145, 28);
+    padding: 20px;
+    text-align: start;
+
+  }
+   .grid-item-2{
+    background-color: transparent;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    text-align: center;
+        
+   }
+
+    .child-grid-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .child-grid-item-1{
+        padding-top: 30px;
+        background-color: transparent;
+        
+        /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        text-align: start;
+    }
+
+    .social-child-grid-item-1{
+        padding-top: 30px;
+        background-color: transparent;
+        /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fomobaby-button{
+        background-color: transparent;
+        color: rgb(28, 145, 28);;
+        border: 1px solid #a3e2b3;
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor:pointer;
+        transition: 0.3s;
+    }
+    
+    .fomobaby-button:hover{
+        color: rgb(181, 223, 181);
+        background-color: #365f40;
+        border: 1px solid #02290c;
+        transform: translate(0, -3px);
+    }
+
+
+   h1{
+       font-size: 45px;
+       font-weight: 900;
+       padding-bottom:15px
+   }
+   h2{
+    font-size: 45px;
+    font-weight: 900;
+    padding-bottom:15px
+  }
+
+   p{
+    font-size: 20px;
+    line-height: 1.6;
+   }
+
+   .facebook {
+    color: #3b5998;
+    transition: 0.3s;
+  }
+
+  .telegram {
+    color: #039BE5;
+    transition: 0.3s;
+  }
+
+  .twitter{
+      color:#5DA9DD;
+      transition: 0.3s;
+  
+ }
+ .reddit{
+     color:#FF4500;
+     transition: 0.3s;
+ }
+ .facebook:hover{
+    color: #3b5998;
+    transform: translate(0, -3px);
+  }
+
+  .telegram:hover {
+    color: #039BE5;
+    transform: translate(0, -3px);
+  }
+
+  .twitter:hover{
+      color:#5DA9DD;
+      transform: translate(0, -3px);
+  
+ }
+ .reddit:hover{
+     color:#FF4500;
+     transform: translate(0, -3px);
+ }
+
+ .fomobaby{
+    animation: MoveUpDown 3s linear infinite;
+    position: relative;
+    
+ }
+
+ .flex-container{
+    display: flex;
+    background-color: transparent;
+    padding-bottom: 50px;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+ .flex-item-1{
+  height: 80px;
+  width: auto;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+ }
+
+
+
+
+
+ @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    
+    .grid-container-1 {
+      background-color: transparent;
+      padding-bottom: 100px;
+      display: grid;
+      grid-template-columns: 4fr;
+      padding: 100px;
+      
+    }
+    .grid-item-2 {
+      display:none
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .home {
+      background-color: rgb(2, 29, 37);
+    }
+    .grid-container-1 {
+      background-color: transparent;
+      padding-bottom: 10px;
+      display: grid;
+      grid-template-columns: 4fr;
+      padding: 10px;
+      
+    }
+    
+  }

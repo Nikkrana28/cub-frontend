@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import styled from 'styled-components'
 import { Heading, Text, BaseLayout } from '@pancakeswap-libs/uikit'
 import useI18n from 'hooks/useI18n'
@@ -11,6 +12,14 @@ import TwitterCard from 'views/Home/components/TwitterCard'
 import EarnAPRCard from 'views/Home/components/EarnAPRCard'
 import BridgeCard from 'views/Home/components/BridgeCard'
 import KingdomCard from 'views/Home/components/KingdomCard'
+import {
+  FaFacebook,
+  FaTelegram,
+  FaTwitter,
+  FaReddit,
+} from "react-icons/fa";
+import Baby from './images/Baby-holding-money-3.png'
+
 
 const Hero = styled.div`
   align-items: center;
@@ -81,31 +90,108 @@ const Home: React.FC = () => {
   const TranslateString = useI18n()
 
   return (
-    <Page>
-      <Hero>
-        <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'Cub Finance')}
-        </Heading>
-        <Text>{TranslateString(578, 'Cub Finance on Binance Smart Chain.')}</Text>
-      </Hero>
-      <div>
-        <Cards>
-          <FarmStakingCard />
-          <TwitterCard/>
-          {/* <LotteryCard /> */}
-        </Cards>
-        <CTACards>
-          <EarnAPRCard />
-          <BridgeCard />
-          <KingdomCard />
-          {/* <WinCard /> */}
-        </CTACards>
-        <Cards>
-          <CakeStats />
-          <TotalValueLockedCard />
-        </Cards>
+    <div className='home'>
+      <div className="grid-container-1">
+        <div className='grid-item-1'>
+          <h1>Welcome To YooShi</h1>
+          <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book It has survived not only five centuries but also the leap into electronic
+            typesetting remaining essentially unchanged It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <br />
+          <div className='child-grid-container'>
+
+            <div className='child-grid-item-1'>
+              <button type='button' className='fomobaby-button'>$Buy FomoBaby</button>
+            </div>
+
+            <div className='child-grid-item-1'>
+              <button type='button' className='fomobaby-button'>$Buy NFT</button>
+            </div>
+
+            <div className='social-child-grid-item-1'>
+            <a
+                href="www.facebook.com"
+                target="_thapa">
+                <FaFacebook size={40} className="facebook" />
+              </a>
+            </div>
+
+            <div className='social-child-grid-item-1'>
+            <a
+                href="www.facebook.com"
+                target="_thapa">
+                <FaTelegram size={40} className="telegram" />
+              </a>
+            </div>
+
+            <div className='social-child-grid-item-1'>
+            <a
+                href="www.facebook.com"
+                target="_thapa">
+                <FaTwitter size={40} className="twitter" />
+              </a>
+            </div>
+
+            <div className='social-child-grid-item-1'>
+            <a
+                href="www.facebook.com"
+                target="_thapa">
+                <FaReddit size={40} className="reddit" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className='grid-item-2'>
+          <img className='fomobaby' src={Baby} style={{ height: '300px' }} alt="" />
+        </div>
       </div>
-    </Page>
+
+      <div className='flex-container'>
+        <div className='flex-item-1'>
+        <h2>58.93%</h2>
+        </div>
+        <div className='flex-item-1'>
+          <h2>251,000+</h2>
+        </div>
+        <div className='flex-item-1'>
+          <h2>251,000+</h2>
+        </div>
+        <div className='flex-item-1'>
+          <h2>251,000+</h2>
+        </div>
+      </div>
+    </div>
+
+    // <Page>
+    //   {/* <Hero>
+    //     <Heading as="h1" size="xl" mb="24px" color="secondary">
+    //       {TranslateString(576, 'Cub Finance')}
+    //     </Heading>
+    //     <Text>{TranslateString(578, 'Cub Finance on Binance Smart Chain.')}</Text>
+    //   </Hero> */}
+    //   {/* <div> */}
+    //     {/* <Cards> */}
+    //       {/* <FarmStakingCard />
+    //       <TwitterCard/> */}
+    //       {/* <LotteryCard /> */}
+    //     {/* </Cards> */}
+    //     {/* <CTACards> */}
+    //       {/* <EarnAPRCard />
+    //       <BridgeCard />
+    //       <KingdomCard /> */}
+    //       {/* <WinCard /> */}
+    //     {/* </CTACards> */}
+    //     {/* <Cards>
+    //       <CakeStats />
+    //       <TotalValueLockedCard />
+    //     </Cards> */}
+    //   {/* </div> */}
+
+    // {/* </Page> */}
+
   )
 }
 
